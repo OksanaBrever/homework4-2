@@ -1,0 +1,104 @@
+*{margin: 0px;          /*встановлюємо величину відступів для всіх блоків*/
+	padding: 0px;/*поля навколо тексту*/
+}
+
+/*header, section, aside, article, footer{display: block;   /*задаємо блочний вигляд елементам*/
+
+body{margin: 0;/*відступи навколо елементу*/
+}
+header{position: relative;
+	height: 50px;
+	background-color: #5c5b6b;
+}
+header a{text-decoration: none;/*пареметри а для всього header */
+    color: #ebe8e1;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+header ul {float:left;/*розміщення всіх ul в header зліва*/
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;/*відображення li в ul блоками*/
+}
+ul li:hover {background: #9b949c; /*при напедення мишкою на  home&about підсвічується іншим кольором*/
+}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 150px;
+  display: none;
+}
+ul li ul li { 
+  background: #9b949c; 
+  display: block;
+}
+ul li ul li:hover {background: #5c5b6b;
+}
+@font-face {
+    font-family: Alexander;
+    src: url(alexander.ttf);
+}
+header p{font-family: Alexander;
+	float:right;
+	font-size: 25px;
+    padding: 15px;
+}
+#first{height: 250px;
+	background-color: #9b949c;
+}
+#second{height: 300px;
+}
+aside{position: relative;
+	float: left;
+	width: 10%;
+ 	height: 100%;
+ 	background-color: #ebe8e1;
+ 	overflow: hidden; /*приховує текст який не поміщається в блок*/
+}
+#container{width: 90%; /*параметри для вікна в якому будуть статті*/
+ 	height: 100%;
+ 	background-color: #e6e6e6;
+ 	overflow: hidden;/*приховує текст який не вміщається*/
+ 	display: block;
+}
+.atc{margin-top: 20px; /*відступ atc до container.....параметри для кожної статті*/
+    padding-top: 10px; /*відступ тексту до atc*/
+    width: 400px;
+    height: auto;
+    float: left;
+    background: url(border.jpg) no-repeat bottom right;/*фон не повторюється, зправа*/
+}
+.atc h1{   /*заголовак*/
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.atc p {  /*для тексту статті і кнопки Read more*/
+    margin: 0px;
+    width: 250px;
+    padding: 15px 5px 10px 5px;
+    float: left;
+}
+.plan{padding-right: 10px; /*лампочка*/
+    float: left;
+    display: block;
+    width: 83px;
+    height: 100px;
+    background: url(plan.jpg) no-repeat 0px -100px;
+    text-indent: -1000px;
+}
+.plan:hover{ background-position: 0px 1px;}
+.button{background: url(buttonr.gif) no-repeat right;
+    padding: 3px 0px;
+    margin-left: 2px;
+    color: #CCCCCC;
+    text-decoration: none;
+}
+footer{text-align: center;
+	clear:left;
+}
+
+	
