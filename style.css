@@ -10,6 +10,8 @@ header{position: relative;
 	height: 50px;
 	background-color: #5c5b6b;
 }
+                              /*Меню в header*/
+    
 header a{text-decoration: none;/*пареметри а для всього header */
     color: #ebe8e1;
     font-size: 20px;
@@ -36,6 +38,7 @@ ul li ul li {
 }
 ul li ul li:hover {background: #5c5b6b;
 }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!не працює???????????????????????*/
 @font-face {
     font-family: Alexander;
     src: url(alexander.ttf);
@@ -45,8 +48,11 @@ header p{font-family: Alexander;
 	font-size: 25px;
     padding: 15px;
 }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!не працює???????????????????????*/
+
+
 #first{height: 250px;
-	background-color: #9b949c;
+	background-color: #b8b1ab;
 }
 #second{height: 300px;
 }
